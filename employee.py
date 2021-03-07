@@ -1,15 +1,25 @@
 class Employee:
-    def __init__(self, firstName, lastName, employeeID, annualSalary):
-        self.firstName = firstName
-        self.lastName = lastName
-        self.employeeID = employeeID
-        self.annualSalary = annualSalary
+    def __init__(self, first_name, last_name, employee_id, annual_salary, savings_percent):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.employee_id = employee_id
+        self.annual_salary = annual_salary
+        self.savings_percent = savings_percent
+        pass
 
-    def fullName(self):
-        return '{} {}'.format(self.firstName,self.lastName)
+    def employee_details(self):
+        return f"First Name: {self.first_name} \n" + f"Last Name: {self.last_name} \n" + f"Employee Id: {self.employee_id} \n" + f"Annual Salary: £ {self.annual_salary} \n" + f"Pension Rate : {self.savings_percent} % \n"
+    
+    def calculate_annual_savings(self):
+        return f"{self.first_name} {self.last_name} annual savings is £ {self.annual_salary * self.savings_percent} \n"
 
-    # def __str__(self):
+emp1 = Employee("Jamie", "Adams", 29846, 50000, 3)
+print(emp1.employee_details())
+emp1_savings = Employee("Jamie", "Adams", 29846, 50000, 0.03)
+print(emp1_savings.calculate_annual_savings())
 
-emp1 = Employee("Jamie", "Adams", 29846, 50000)
+emp2 = Employee("Helen", "Joshua", 29768, 60000, 4.6)
+print(emp2.employee_details())
+emp2_savings = Employee("Helen", "Joshua", 29768, 60000, 0.046)
+print(emp2_savings.calculate_annual_savings())
 
-print(emp1.fullName())
