@@ -16,5 +16,5 @@ class Person:
     def get_profile(self):
         return f" First Name: {self.first_name}\n Last Name: {self.last_name} \n Age: {self.age} \n"
 
-person1 = Profile("Greg", "James", 37)
+person1 = Person("Greg", "James", 37)
 print(person1.get_profile())
