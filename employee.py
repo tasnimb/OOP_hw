@@ -1,27 +1,16 @@
-from person import
-class Employee(person):
+from person import Person
+class Employee(Person):
     def __init__(self, first_name, last_name, age, employee_id, store_location, annual_salary):
-        super()__init__(first_name, last_name, age)
+        super().__init__(first_name, last_name, age)
         self.employee_id = employee_id
         self.store_location = store_location
         self.annual_salary = annual_salary
 
-
-
-
-class Employee:
-    def __init__(self, first_name, last_name, employee_id, annual_salary):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.employee_id = employee_id
-        self.annual_salary = annual_salary
-        pass
-
     def employee_details(self):
-        return f"First Name: {self.first_name} \n" + f"Last Name: {self.last_name} \n" + f"Employee Id: {self.employee_id} \n" + f"Annual Salary: £ {self.annual_salary} \n"
+        return f"First Name: {self.first_name} \n" + f"Last Name: {self.last_name} \n" + f"Employee Id: {self.employee_id} \n" + f"Store Location: {self.store_location}\n" + f"Annual Salary: £ {self.annual_salary}\n"
     
 
-emp1 = Employee("Jamie", "Adams", 29846, 50000)
+emp1 = Employee("Jamie", "Adams", 17, 28696, "London Cheapside", 17000)
 print(emp1.employee_details())
 
 
