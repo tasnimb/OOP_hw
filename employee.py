@@ -10,8 +10,7 @@ class Employee(Person):
         return f"First Name: {self.first_name} \n" + f"Last Name: {self.last_name} \n" + f"Employee Id: {self.employee_id} \n" + f"Store Location: {self.store_location}\n" + f"Annual Salary: £ {self.annual_salary}\n"
     
 
-emp1 = Employee("Jamie", "Adams", 17, 28696, "London Cheapside", 17000)
-print(emp1.employee_details())
+
 
 
 

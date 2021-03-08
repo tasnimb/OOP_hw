@@ -5,3 +5,4 @@ class Customer(Person):
         self.customer_id = customer_id
         self.membership_type = membership_type
         pass
+
