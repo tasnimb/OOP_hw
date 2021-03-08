@@ -1,3 +1,14 @@
+from person import
+class Employee(person):
+    def __init__(self, first_name, last_name, age, employee_id, store_location, annual_salary):
+        super()__init__(first_name, last_name, age)
+        self.employee_id = employee_id
+        self.store_location = store_location
+        self.annual_salary = annual_salary
+
+
+
+
 class Employee:
     def __init__(self, first_name, last_name, employee_id, annual_salary):
         self.first_name = first_name
