@@ -23,7 +23,7 @@ class Person:
     #         return age
 
     def get_profile(self):
-        return f" First Name: {self.first_name}\n Last Name: {self.last_name} \n Age: {self.age} \n"
+        return f" First Name: {self.first_name}\n Last Name: {self.last_name} \n Age: {self.} \n"
 
 person1 = Person("Greg", "James", 37)
 print(person1.get_profile())
